@@ -1,0 +1,65 @@
+body,html{
+  background-color: red;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+a,p,h1,h2{
+  text-align: center;
+  z-index: 10;
+}
+.popup{
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px gray;
+  position: fixed;
+  left: 20%;
+  top: 0;
+  z-index: 9999;
+}
+.popup span{
+  font-size: 30px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+a{
+  background-color: green;
+  padding: 10px;
+  font-size: 10px;
+  color: white;
+}
+h1{
+  font-size: 50px;
+}
+.spin{
+  animation: spin .8s linear infinite;
+  float: left;
+  z-index: 1;
+}
+#audio{
+  opacity: 0;
+}
+#link{
+  position: absolute;
+  left: 48%;
+  top: 350px;
+}
+@keyframes spin {
+  0%{
+    transform: perspective(480px) rotateY(0deg);
+    width: 10%;
+  }
+  50%{
+    width: 50%;
+  }
+  100%{
+    transform: perspective(480px) rotateY(360deg);
+      width: 10%;
+  }
+
+}
